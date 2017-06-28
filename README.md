@@ -15,7 +15,7 @@ Because I can't redistribute the original RPM, you have to build your own local 
  2. Drop the downloaded RPM in the same folder as the `Dockerfile`.
  3. Open a shell and run
  ```bash
- docker image build . -t local/uemcli:<yourversion> -t local/uemcli:latest
+ docker image build . -t local/uemcli:4.1.1.1.3836-1 -t local/uemcli:latest
  ```
 
 After that, you can execute
