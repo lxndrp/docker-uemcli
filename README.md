@@ -5,9 +5,9 @@ A Docker container to simplify running EMC's `uemcli` utility for the management
 A few things are required to use this utility on your machine:
  - a fairly recent [Docker installation](https://www.docker.com/community-edition#/download)
  - a compatible EMC storage system (e.g. the EMC Unity® family)
- - the [binary RPM package](https://download.emc.com/downloads/DL69818_Unity-Unisphere-UEM-CLI-(Redhat-Linux-32-bit).rpm) of `uemcli` from EMC (you will actually have to login)
+ - the [binary RPM package](https://download.emc.com/downloads/DL69818_Unity-Unisphere-UEM-CLI-(Redhat-Linux-32-bit).rpm) of `uemcli` from EMC (you will actually have to login). Note that this **will not work** on VNXe systems; your have to download a different binary.
 
-Note that `uemcli` **will not work** on VNXe systems.
+Beware that `uemcli` **does not support** older EMC storage systems. You might want to take a look [at my repository](https://github.com/lxndrp/docker-naviseccli) for Navisphere-based systems.
 
 ## Installation and Usage
 Because I can't redistribute the original RPM, you have to build your own local Docker image, like so:
